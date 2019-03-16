@@ -11,6 +11,7 @@ Question.prototype.correctAnswer = function (choices) {
   return choice === this.answer;
 }
 
+
 // CONSTRUCTOR FUNCTION (TRIVIA) //
 
 function Trivia(questions) {

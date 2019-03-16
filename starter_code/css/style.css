@@ -19,6 +19,12 @@ html {
   padding: 0.5rem 2rem;
 }
 
+.card {
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
 

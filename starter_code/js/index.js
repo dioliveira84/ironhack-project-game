@@ -1,39 +1,38 @@
 // CONSTRUCTOR FUNCTION (QUESTIONS) //
 
-function Question(quiz, choices, answer) {
-  this.quiz = quiz;
+function Question(text, choices, answer) {
+  this.text = text;
   this.choices = choices;
   this.answer = answer;
 }
 
 // Correct Answer 
-Question.prototype.correctAnswer = function (choices) {
+Question.prototype.correctAnswer = function (choice) {
   return choice === this.answer;
 }
 
-
 // CONSTRUCTOR FUNCTION (TRIVIA) //
 
-function Trivia(questions) {
+function Quiz(questions) {
   this.score = 0;
-  this.indexOfQuestion = 0;
   this.questions = questions;
+  this.questionIndex = 0;
 }
 
 // Question Index
-Trivia.prototype.getQuestionIndex = function () {
-  return this.questions[this.indexOfQuestion];
+Quiz.prototype.getQuestionIndex = function () {
+  return this.questions[this.questionIndex];
 }
 
 // Is End
-Trivia.prototype.isEnd = function () {
-  return this.questions.length === this.indexOfQuestion;
+Quiz.prototype.isEnded = function () {
+  return this.questions.length === this.questionIndex;
 }
 
 // Score
-Trivia.prototype.guess = function (answer) {
-  this.indexOfQuestion++;
-  if (this.indexOfQuestion().correctAnswer(answer)) {
+Quiz.prototype.guess = function (answer) {
+  this.questionIndex++;
+  if (this.getQuestionIndex().correctAnswer(answer)) {
     this.score++;
   }
 }

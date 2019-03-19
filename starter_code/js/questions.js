@@ -1,6 +1,6 @@
 function populate() {
   if (quiz.isEnded()) {
-    showScores();
+    // showScores();
   } else {
     // show question 
     var element = document.getElementById("cardtitle");
@@ -9,11 +9,11 @@ function populate() {
     //show choices 
     var choices = quiz.getQuestionIndex().choices;
     for (var i = 0; i < choices.lenght; i++) {
-      var element = document.getElementById("choic" + i);
+      var element = document.getElementById("choice"+i);
       element.innerHTML = choices[i];
     }
   }
-};
+}
 
 
 // Array of all the questions and choices to populate the questions.

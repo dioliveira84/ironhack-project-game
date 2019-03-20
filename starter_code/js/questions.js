@@ -48,5 +48,3 @@ var questions = [
 ];
 
 var trivia = new Trivia(questions);
-
-populateCard();

@@ -23,81 +23,49 @@
 
   <header>
     <div class="navbar navbar-dark bg-dark shadow-sm">
-      <div class="container d-flex justify-content-between logo-margin">
+      <div class="container d-flex logo-margin">
         <a href="https://www.ironhack.com/en" target="_blank" class="navbar-brand d-flex align-items-center">
           <img src="images/ironhack-logo2.png" width="70%" weight="70%" class="d-inline-block align-top" alt="ironhack-logo">
         </a>
+        <!-- <a class="nav-item nav-link active" href="#">Active</a> -->
+        <button type="button" class="btn btn-warning float-right">START THE GAME</button>
+
       </div>
     </div>
   </header>
 
-  <div id="wrapper">
-
-
-    <div>
-
-
-      <!-- <main role="main">  -->
-      <!-- <section class="jumbotron text-center center-section">
-      <div class="container">
-        <br>
-        <h1 class="jumbotron-heading">Ironhack Quiz</h1>
-        <br>
-        <p   class="lead text-muted">Test your wits & knowledge with whatever-the-heck you know about (so you can
-          actually win). Players take turns to guess given questions and the computer will tell them who is right!</p>
-        <p>
-          <a href="#" class="btn btn-primary my-2">Start the Game</a>
-          <br>
-          <br>
-        </p>
-      </div>
-    </section> -->
-
-      <section id="cardWrapper">
-        <div class="container bg">
-          <div class="card" style="width: 36rem;">
-            <div class="card-body ">
-              <h4 id="cardtitle">Ironhack Trivia</h4>
-              <hr>
-              <h5 id="questions"></h5>
-              <h5 id="score">Timer: </h5>
-              <div>
-
-                <div class="row">
-                  <div class="col">
-                    <button id="btn0" type="button" class="btn btn-outline-primary btn-lg btn-block"><span id="choice0"></span></button>
-                  </div>
-                  <div class="col">
-                    <button id="btn1" type="button" class="btn btn-outline-primary btn-lg btn-block"><span id="choice1"></span></button>
-                  </div>
-                  <div class="w-100"></div>
-                  <br>
-                  <div class="col">
-                    <button id="btn2" type="button" class="btn btn-outline-primary btn-lg btn-block"><span id="choice2"></span></button>
-                  </div>
-                  <div class="col">
-                    <button id="btn3" type="button" class="btn btn-outline-primary btn-lg btn-block"><span id="choice3"></span></button>
-                  </div>
-                </div>
-
-              </div>
+  <div id="image">
+    <div id="wrapper">
+      <main role="main">
+        <div id="game-node">
+          <section class="jumbotron text-center center-section">
+            <div class="container">
+              <br>
+              <h1 class="jumbotron-heading">Ironhack Quiz</h1>
+              <br>
+              <p class="lead text-muted">Test your wits & knowledge with whatever-the-heck you know about (so you can
+                actually win). Players take turns to guess given questions and the computer will tell them who is
+                right!</p>
+              <p>
+                <a href="#" class="btn btn-primary my-2">Start the Game</a>
+                <br>
+                <br>
+              </p>
             </div>
-          </div>
+          </section>
         </div>
-      </section>
-
-      <!-- </main> -->
-
+      </main>
     </div>
-
   </div>
 
+  <div class="fixed">© 2019 Copyright: Diogo Oliveira</div>
+
   <!-- Footer -->
-  <footer class="page-footer font-small bg-light shadow-sm footer">
+  <!-- <footer class="page-footer font-small bg-light shadow-sm footer">
     <div class="footer-copyright text-center py-3">© 2019 Copyright:
       <a href="https://github.com/dioliveira84" target="_blank"> Diogo Oliveira</a>
     </div>
-  </footer>
+  </footer> -->
 
   <!-- javascript files -->
   <script src="js/index.js"></script>

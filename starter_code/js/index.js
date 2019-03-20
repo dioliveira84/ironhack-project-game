@@ -34,3 +34,47 @@ Trivia.prototype.guess = function (answer) {
   }
   this.questionIndex++;
 }
+
+// 
+
+function removeComponent() {
+var gameNode = document.getElementById('game-node');
+gameNode.removeChild(gameNode.childNodes[1]);
+}
+
+function addComponent() {
+var cardNode = document.getElementById('game-node');
+var addSession = ' <section id="cardWrapper"> \
+  <div class="container bg"> \
+    <div class="card" style="width: 36rem;"> \
+      <div class="card-body "> \
+        <h4 id="cardtitle">Ironhack Trivia</h4> \
+        <hr> \
+        <h5 id="questions"></h5> \
+        <h5 id="score">Timer: </h5> \
+        <div> \
+          <div class="row"> \
+            <div class="col"> \
+              <button id="btn0" type="button" class="btn btn-outline-primary btn-lg btn-block"><span id="choice0"></span></button> \
+            </div> \
+            <div class="col"> \
+              <button id="btn1" type="button" class="btn btn-outline-primary btn-lg btn-block"><span id="choice1"></span></button> \
+            </div> \
+            <div class="w-100"></div> \
+            <br> \
+            <div class="col"> \
+              <button id="btn2" type="button" class="btn btn-outline-primary btn-lg btn-block"><span id="choice2"></span></button> \
+            </div> \
+            <div class="col"> \
+              <button id="btn3" type="button" class="btn btn-outline-primary btn-lg btn-block"><span id="choice3"></span></button> \
+            </div> \
+          </div> \
+        </div> \
+      </div> \
+    </div> \
+  </div> \
+</section>'; 
+cardNode.innerHTML = addSession;
+populateCard();
+
+}

@@ -26,14 +26,14 @@ function guess(id, guess) {
   }
 };
 
-function displayProgress () {
+function displayProgress() {
   var currentQuestionNumber = trivia.questionIndex + 1;
   var element = document.getElementById("questions");
   element.innerHTML = " Question " + currentQuestionNumber + " of " + trivia.questions.length;
 }
 
 function displayScores() {
-  var gameOverPage = "<h1>Result</h1>";
+  var gameOverPage = "<h1 >Result</h1>";
   gameOverPage += "<h2 id='cardWrapper'>Your Score: " + trivia.score + "</h2>";
   var element = document.getElementById("cardWrapper")
   element.innerHTML = gameOverPage;

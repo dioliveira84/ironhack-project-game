@@ -44,7 +44,7 @@ function removeComponent() {
 
 function addComponent() {
   var cardNode = document.getElementById('game-node');
-  var addSession = ' <section id="cardWrapper"> \
+  var addSession = '<section id="cardWrapper"> \
   <div class="container bg"> \
     <div class="card" style="width: 36rem;"> \
       <div class="card-body "> \
@@ -75,12 +75,18 @@ function addComponent() {
   </div> \
 </section>';
   cardNode.innerHTML = addSession;
-  
-    var btnStartOne = document.getElementById("myBtn");
-    btnStartOne.addEventListener('click', function () {
-      removeComponent();
-      addComponent();
-    });
+
+  function playMusic() {
+    document.getElementById('my_audio').play();
+  }
+
+  var btnStartOne = document.getElementById("myBtn");
+  btnStartOne.addEventListener('click', function () {
+    removeComponent();
+    addComponent();
+    playMusic();
+
+  });
 
   populateCard();
 

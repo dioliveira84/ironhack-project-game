@@ -2,6 +2,7 @@ function populateCard() {
   if (trivia.isEnded()) {
     displayScores();
   } else {
+
     // show question 
     var element = document.getElementById("cardtitle");
     element.innerHTML = trivia.getQuestionIndex().query;

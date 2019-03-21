@@ -38,13 +38,13 @@ Trivia.prototype.guess = function (answer) {
 // 
 
 function removeComponent() {
-var gameNode = document.getElementById('game-node');
-gameNode.removeChild(gameNode.childNodes[1]);
+  var gameNode = document.getElementById('game-node');
+  gameNode.removeChild(gameNode.childNodes[1]);
 }
 
 function addComponent() {
-var cardNode = document.getElementById('game-node');
-var addSession = ' <section id="cardWrapper"> \
+  var cardNode = document.getElementById('game-node');
+  var addSession = ' <section id="cardWrapper"> \
   <div class="container bg"> \
     <div class="card" style="width: 36rem;"> \
       <div class="card-body "> \
@@ -73,8 +73,15 @@ var addSession = ' <section id="cardWrapper"> \
       </div> \
     </div> \
   </div> \
-</section>'; 
-cardNode.innerHTML = addSession;
-populateCard();
+</section>';
+  cardNode.innerHTML = addSession;
+  
+    var btnStartOne = document.getElementById("myBtn");
+    btnStartOne.addEventListener('click', function () {
+      removeComponent();
+      addComponent();
+    });
+
+  populateCard();
 
 }

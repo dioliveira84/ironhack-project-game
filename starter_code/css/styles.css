@@ -23,10 +23,10 @@ main {
 } */
 
 #image {
-  margin: 0px;
+  margin-top: 94px;
   padding-top: 20px; 
-  background-image: url('../images/skynews-quiz-time_4458210.jpg');
-  height: 91%;
+  background-image: url('https://media.giphy.com/media/jTZVegIrdLCCY/giphy.gif');
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -68,6 +68,10 @@ main {
   width: 180px;
   height: 10px;
   font-size: 10px;
+}
+
+.fixed-top-2 {
+    margin-top: 56px;
 }
 
 .btn-block {

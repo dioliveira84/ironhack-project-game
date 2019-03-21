@@ -51,7 +51,7 @@ function addComponent() {
         <h4 id="cardtitle">Ironhack Trivia</h4> \
         <hr> \
         <h5 id="questions"></h5> \
-        <h5 id="score">Timer: </h5> \
+        <h5 id="score">Select one option:</h5> \
         <div> \
           <div class="row"> \
             <div class="col"> \
@@ -76,18 +76,17 @@ function addComponent() {
 </section>';
   cardNode.innerHTML = addSession;
 
-  function playMusic() {
-    document.getElementById('my_audio').play();
-  }
+  populateCard();
+
+}
+
+function playMusic() {
+  document.getElementById('my_audio').play();
+};
 
   var btnStartOne = document.getElementById("myBtn");
   btnStartOne.addEventListener('click', function () {
     removeComponent();
     addComponent();
     playMusic();
-
-  });
-
-  populateCard();
-
-}
+  })

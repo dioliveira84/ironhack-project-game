@@ -33,12 +33,27 @@ function displayProgress() {
 }
 
 function displayScores() {
-  var gameOverPage = "<h1 >Result</h1>";
+  var gameOverPage = '<section class="jumbotron text-center" style="padding-left: 10px; padding-right: 10px;">';
+  gameOverPage += '<div class="container">';
+  gameOverPage += "<h1 >Result</h1>";
   gameOverPage += "<h2 id='cardWrapper'>Your Score: " + trivia.score + "</h2>";
+  gameOverPage += '<img src="https://media.giphy.com/media/l1Lc1Kn9hImgpx5Re/source.gif" width="55%" weight="55%" alt="theEnd.gif" style="padding:15px";></img>';
+  gameOverPage += "<br>";
+  gameOverPage += "<div>"
+  gameOverPage += '</section>';
   var element = document.getElementById("cardWrapper")
   element.innerHTML = gameOverPage;
-  
+
 };
+
+// function displayScores() {
+//   var gameOverPage = "<h1 >Result</h1>";
+//   gameOverPage += "<h2 id='cardWrapper'>Your Score: " + trivia.score + "</h2>";
+//   var element = document.getElementById("cardWrapper")
+//   element.innerHTML = gameOverPage;
+
+// };
+
 
 // Array of all the questions and options to populate the questions.
 var questions = [

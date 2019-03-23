@@ -52,6 +52,7 @@ function addComponent() {
         <hr> \
         <h5 id="questions"></h5> \
         <h5 id="score">Select one option:</h5> \
+        <br> \
         <div> \
           <div class="row"> \
             <div class="col"> \
@@ -84,9 +85,14 @@ function playMusic() {
   document.getElementById('my_audio').play();
 };
 
-  var btnStartOne = document.getElementById("myBtn");
-  btnStartOne.addEventListener('click', function () {
-    removeComponent();
-    addComponent();
-    playMusic();
-  })
+var btnStartOne = document.getElementById("myBtn");
+btnStartOne.addEventListener('click', function () {
+  removeComponent();
+  addComponent();
+  playMusic();
+
+})
+
+function save() {
+  var msg = document.getElementById('myBtn');
+}

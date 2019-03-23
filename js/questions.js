@@ -39,6 +39,7 @@ function displayScores() {
   gameOverPage += "<h2 id='cardWrapper'>Your Score: " + trivia.score + "</h2>";
   gameOverPage += '<img src="https://media.giphy.com/media/l1Lc1Kn9hImgpx5Re/source.gif" width="55%" weight="55%" alt="theEnd.gif" style="padding:15px";></img>';
   gameOverPage += "<br>";
+  gameOverPage += '<button onclick="location.reload(); "type="button" class="btn btn-warning btn-sm mb-3" id="myBtn01">RESTART THE GAME</button>';
   gameOverPage += "<div>"
   gameOverPage += '</section>';
   var element = document.getElementById("cardWrapper")
